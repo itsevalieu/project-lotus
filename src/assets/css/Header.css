@@ -1,0 +1,75 @@
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	box-shadow: 1px 2px 5px 3px #333;
+	font-family: 'Dosis', sans-serif;
+	z-index: 2;
+	background: #fff;
+}
+header div {
+	display: inline-block;
+}
+header a {
+	color: black;
+}
+header img {
+	width: 40px;
+	height: 35px;
+}
+#brand-name {
+	text-align: center; 
+	font-size: 30px;
+	font-weight: 100; 
+	font-family: 'Dosis', sans-serif;
+}
+.header-links {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+.header-links a {
+	margin-right: 15px;
+}
+.header-links a:hover {
+	color: #fac7c6;
+}
+.header-hamburger {
+	display: none;
+}
+#brand-logo img {
+	margin: 5px 10px;
+}
+
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	#brand-name {
+		font-size: 28px;
+	}
+	header img {
+		width: 35px;
+		height: 30px;
+	}
+}
+@media only screen and (max-width: 760px) {
+	header {
+		justify-content: space-between;
+		box-shadow: 1px 2px 2px 1px #333;
+	}
+	.header-links {
+		display: none;
+	}
+	.header-hamburger {
+		display: block;
+	}
+	#brand-name {
+		font-size: 24px;
+	}
+	header img {
+		width: 30px;
+		height: 25px;
+	}
+}

@@ -1,7 +1,7 @@
-import React, { PropTypes, Component } from "react";
-import "../../assets/css/App/header.css";
-import brand_logo from "../../assets/icons/teafo.png";
-import hamburger from "../../assets/icons/hamburger.png";
+import React, { Component } from "react";
+import "../assets/css/Header.css";
+import brand_logo from "../assets/icons/site-logo.png";
+import hamburger from "../assets/icons/hamburger.png";
 
 class Header extends Component {
 	constructor(props){
@@ -24,10 +24,10 @@ class Header extends Component {
 					<a href="/about">About</a>
 					<a href="/blog">Blog</a>
 					<a href="/index">Index</a>
-					<a href="#">Login</a>
+					<a href="/">Login</a>
 				</div>
 				<div className="header-hamburger">
-					<a href="#" onClick={this.openSidebar}>
+					<a href="/" onClick={this.openSidebar}>
 						<img src={ hamburger } alt="#" />
 					</a>
 				</div>

@@ -1,5 +1,5 @@
-import React, { PropTypes, Component } from "react";
-import "../../assets/css/Landing/hero.css";
+import React, { Component } from "react";
+import "../../assets/css/Hero.css";
 
 class Hero extends Component {
 	// constructor(props){

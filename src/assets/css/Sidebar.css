@@ -1,0 +1,28 @@
+.sidebar {
+	background: #acafaa;
+	height: 35px;
+	z-index: -1;
+	box-shadow: 1px 2px 5px 3px #333;
+	text-shadow: 1px 1px 1px #ccc;
+}
+.sidebar a {
+	color: #000;
+	font-size: 14px;
+}
+#sidebar {
+	display: none;
+}
+.cat {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+}
+
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){}
+@media only screen and (max-width: 760px) {}

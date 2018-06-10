@@ -1,5 +1,5 @@
-import React, { PropTypes, Component } from "react";
-import "../../assets/css/Landing/blog-module.css";
+import React, { Component } from "react";
+import "../../assets/css/Blog.css";
 
 class BlogModule extends Component {
 	
@@ -14,7 +14,7 @@ class BlogModule extends Component {
 					</form>
 				</div>
 				<div className="blog-module-img">
-					<img src="../../assets/images/annie-spratt.jpg" alt="blog photo"/>
+					<img src="../../assets/images/annie-spratt.jpg" alt="blog"/>
 				</div>
 			</div>
 		);

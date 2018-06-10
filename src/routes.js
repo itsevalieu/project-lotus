@@ -1,21 +1,25 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { 
+	BrowserRouter as Router,
+	Route 
+} from 'react-router-dom';
+import App from './containers/App/App.js';
+import Landing from './containers/Landing/Landing.jsx';
+import About from './containers/Pages/About.jsx';
+import Blog from './containers/Blog/Blog.jsx';
+import Encyclopedia from './containers/Encyclopedia/Encyclopedia.jsx';
+import Shop from './containers/Shop/Shop.jsx';
 
-import App from './App.jsx';
-import Landing from './Landing.jsx';
-import About from './About.jsx';
-import Blog from './Blog.jsx';
-import Encyclopedia from './Encyclopedia.jsx';
-import Shop from './Shop.jsx';
+const routes = (
+	<Router>
+		<App>
+			<Route exact path="/home" component={ Landing } />
+			<Route exact path="/about" component={ About } />
+			<Route exact path="/blog" component={ Blog } />
+			<Route exact path="/encyclopedia" component={ Encyclopedia } />
+			<Route exact path="/shop" component={ Shop } />			
+		</App>
+	</Router>
+);
 
-export default () => {
-	return(
-		<Route path='/' component={ App }>
-			<IndexRoute component={ Landing } />
-			<Route path="/about" component={ About } />
-			<Route path="/blog" component={ Blog } />
-			<Route path="/encyclopedia" component={ Encyclopedia } />
-			<Route path="/shop" component={ Shop } />			
-		</Route>
-	);
-};
+export default routes;

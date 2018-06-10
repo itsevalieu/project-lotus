@@ -1,0 +1,58 @@
+.blog-module {
+	display: flex;
+	flex-flow: row;
+	min-height: 350px;
+	background: #fff;
+	text-align: center;
+}
+.blog-module div {
+	width: 50%;
+}
+.blog-module-img {
+	height: 350px;
+}
+.blog-module-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.blog-module-textbox {
+	min-height: 350px;
+}
+.blog-module-textbox form {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.blog-module-textbox button {
+	background: #fac7c6;
+	color: #000;
+	width: 125px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 1px #000;
+}
+
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	.blog-module {
+		flex-flow: row wrap-reverse;
+	}
+	.blog-module div {
+		flex: 1 50%;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.blog-module {
+		flex-flow: row wrap-reverse;
+	}
+	.blog-module div {
+		flex: 1 100%;
+	}
+}
