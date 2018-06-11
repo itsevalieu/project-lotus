@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../assets/css/Header.css";
-import brand_logo from "../assets/icons/site-logo.png";
-import hamburger from "../assets/icons/hamburger.png";
+import React, { Component } from 'react';
+import '../assets/css/Header.css';
+import brand_logo from '../assets/icons/site-logo.png';
+import hamburger from '../assets/icons/hamburger.png';
 
 class Header extends Component {
 	constructor(props){
@@ -13,22 +13,22 @@ class Header extends Component {
 		return(
 			<header>
 				<div>
-					<a href="/" id="brand-logo">
-						<img src={ brand_logo } alt="#" />
+					<a href='/' id='brand-logo'>
+						<img src={ brand_logo } alt='#' />
 					</a>	
 				</div>
 				<div>
-					<a href="/" id="brand-name">teafographic</a>
+					<a href='/' id='brand-name'>teafographic</a>
 				</div>
-				<div className="header-links">
-					<a href="/about">About</a>
-					<a href="/blog">Blog</a>
-					<a href="/index">Index</a>
-					<a href="/">Login</a>
+				<div className='header-links'>
+					<a href='/about'>About</a>
+					<a href='/blog'>Blog</a>
+					<a href='/index'>Index</a>
+					<a href='/'>Login</a>
 				</div>
-				<div className="header-hamburger">
-					<a href="/" onClick={this.openSidebar}>
-						<img src={ hamburger } alt="#" />
+				<div className='header-hamburger'>
+					<a href='/' onClick={this.openSidebar}>
+						<img src={ hamburger } alt='#' />
 					</a>
 				</div>
 			</header>	
@@ -36,13 +36,13 @@ class Header extends Component {
 	}
 	openSidebar(e){
 		e.preventDefault();
-		console.log("Cat.");
+		console.log('Cat.');
 		this.setState(prevState => ({sidebar: !prevState.sidebar}));
 		console.log(this.state.sidebar);
 		if(this.state.sidebar === true) {
-			document.getElementById("sidebar").style.display = "block";
+			document.getElementById('sidebar').style.display = 'block';
 		} else {
-			document.getElementById("sidebar").style.display = "none";			
+			document.getElementById('sidebar').style.display = 'none';			
 		}
 	}
 };

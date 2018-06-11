@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Shop extends Component {
 	
 	render() {
 		return(
-			<main className="container">
+			<main className='container'>
 				Shop Page
 				Should have the following:
 				1. Sidebar with tags

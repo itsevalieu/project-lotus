@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import "../assets/css/Footer.css";
+import React, { Component } from 'react';
+import '../assets/css/Footer.css';
 
 class Footer extends Component {
 	render() {
 		return (
 			<footer>
 				<div>
-					<a href="/">About Us</a>
-					<a href="/">Jobs</a>
-					<a href="/">Privacy Terms</a>
-					<a href="/">Support Portal</a>
-					<a href="/">FAQS</a>
+					<a href='/'>About Us</a>
+					<a href='/'>Jobs</a>
+					<a href='/'>Privacy Terms</a>
+					<a href='/'>Support Portal</a>
+					<a href='/'>FAQS</a>
 				</div>
 				<div>
-					<a href="/"><img src="../../assets/icons/fb-logo.png" alt="facebook-url"/></a>
-					<a href="/">Instagram</a>
-					<a href="/">Pinterest</a>
-					<a href="/"><img src="../../assets/icons/twitter-logo.png" alt="twitter-url"/></a>
-					<a href="/">Blog</a>
+					<a href='/'><img src='../../assets/icons/fb-logo.png' alt='facebook-url'/></a>
+					<a href='/'>Instagram</a>
+					<a href='/'>Pinterest</a>
+					<a href='/'><img src='../../assets/icons/twitter-logo.png' alt='twitter-url'/></a>
+					<a href='/'>Blog</a>
 				</div>
 	        </footer>
         );

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import Header from '../../components/Header.jsx';
 import Footer from '../../components/Footer.jsx';
-// import Adbar from "../../components/components/Adbar.jsx";
-import "../../assets/css/App.css";
+// import Adbar from '../../components/components/Adbar.jsx';
+import '../../assets/css/App.css';
 
 class App extends Component {
   constructor(props) {

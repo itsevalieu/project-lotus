@@ -13,11 +13,11 @@ import Shop from './containers/Shop/Shop.jsx';
 const routes = (
 	<Router>
 		<App>
-			<Route exact path="/home" component={ Landing } />
-			<Route exact path="/about" component={ About } />
-			<Route exact path="/blog" component={ Blog } />
-			<Route exact path="/encyclopedia" component={ Encyclopedia } />
-			<Route exact path="/shop" component={ Shop } />			
+			<Route exact path='/home' component={ Landing } />
+			<Route exact path='/about' component={ About } />
+			<Route exact path='/blog' component={ Blog } />
+			<Route exact path='/encyclopedia' component={ Encyclopedia } />
+			<Route exact path='/shop' component={ Shop } />			
 		</App>
 	</Router>
 );

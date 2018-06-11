@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import "../../assets/css/Package.css";
-import icon1 from "../../assets/icons/icons8-Calendar 1.png";
-import icon3 from "../../assets/icons/icons8-Calendar 3.png";
-import icon6 from "../../assets/icons/icons8-Calendar 6.png";
-import icon12 from "../../assets/icons/icons8-Calendar 12.png";
+import React, { Component } from 'react';
+import '../../assets/css/Package.css';
+import icon1 from '../../assets/icons/icons8-Calendar 1.png';
+import icon3 from '../../assets/icons/icons8-Calendar 3.png';
+import icon6 from '../../assets/icons/icons8-Calendar 6.png';
+import icon12 from '../../assets/icons/icons8-Calendar 12.png';
 
 
 class PackageModule extends Component {
 	
 	render() {
 		return(
-			<div className="package-module">
+			<div className='package-module'>
 				<button>
 					<img src={ icon1 } alt=''/>
 					<h2>Special Occasion</h2>
