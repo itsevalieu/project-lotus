@@ -1,18 +1,15 @@
 header {
 	display: flex;
 	flex-direction: row;
+	height: 80px;
 	align-items: center;
 	align-content: center;
-	box-shadow: 1px 2px 5px 3px #333;
-	font-family: 'Dosis', sans-serif;
 	z-index: 2;
+	padding: 0 18px;
 	background: #fff;
 }
 header div {
 	display: inline-block;
-}
-header a {
-	color: black;
 }
 header img {
 	width: 40px;
@@ -30,10 +27,7 @@ header img {
 	justify-content: flex-end;
 }
 .header-links a {
-	margin-right: 15px;
-}
-.header-links a:hover {
-	color: #fac7c6;
+	margin: 0px 12px;
 }
 .header-hamburger {
 	display: none;
@@ -57,7 +51,6 @@ header img {
 @media only screen and (max-width: 760px) {
 	header {
 		justify-content: space-between;
-		box-shadow: 1px 2px 2px 1px #333;
 	}
 	.header-links {
 		display: none;

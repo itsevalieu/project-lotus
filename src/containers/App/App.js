@@ -28,11 +28,13 @@ class App extends Component {
   }
   render() {
     return (
-      <main>
+      <div>
         <Header/>
-        {this.props.children}
+        <main>
+          {this.props.children}
+        </main>
         <Footer/>
-      </main>
+      </div>
     );
   }
 }

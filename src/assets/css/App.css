@@ -1,28 +1,65 @@
-.App {
-  text-align: center;
+main {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 50px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/*buttons, h1-6, p, font-size, font-style, a, li, ul, */
+button {
+  background: #fac7c6;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 0 0 rgba(0, 1, 31, 0.05);
+  color: #000;
+  font-weight: 400;
+  height: 50px;
+  width: 150px;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+h1 {
+  font-size: 2em;
 }
-
-.App-title {
+h2 {
   font-size: 1.5em;
 }
-
-.App-intro {
-  font-size: large;
+h3 {
+  font-size: 1.4em;
 }
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.1em;
+}
+p {
+  font-size: 1em;
+}
+a {
+  color: #333;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+}
+a:hover {
+  color: #fac7c6;
+}
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+}
+@media screen and (min-width: 945px) and (max-width: 1240px){
+  main {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 945px){
+  main {
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width: 760px) {
+  main {
+    margin: 0px 0px;
+  }
 }

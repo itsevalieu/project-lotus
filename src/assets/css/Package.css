@@ -1,20 +1,17 @@
 .package-module {
 	display: flex;
 	flex-flow: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	min-height: 200px;
 	max-height: 600px;
-	background: #ccc;
-	border: 1px solid #aaa;
-	padding: 2.5px 0px;
+	/*padding: 2.5px 0px;*/
 }
 .package-module button {
 	background: white;
 	border: 1px solid #ddd;
 	height: 150px;
 	width: 250px;
-	box-shadow: 1px 1px 1px #000;
 	line-height: 0px;
 }
 .package-module img {
@@ -31,7 +28,7 @@
 	.package-module {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.package-module button {
 		flex: 1 50%;
@@ -41,7 +38,7 @@
 	.package-module {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.package-module button {
 		flex: 1 100%;

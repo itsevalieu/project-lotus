@@ -12,7 +12,6 @@ class Landing extends Component {
 				<Hero/>
 				<PackageModule/>
 				<ShopModule/>
-			
 				<BlogModule/>
 			</div>
 		);

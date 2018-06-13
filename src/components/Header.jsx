@@ -21,10 +21,9 @@ class Header extends Component {
 					<a href='/' id='brand-name'>teafographic</a>
 				</div>
 				<div className='header-links'>
-					<a href='/about'>About</a>
-					<a href='/blog'>Blog</a>
-					<a href='/index'>Index</a>
-					<a href='/'>Login</a>
+					<a href='/learn'>HOW IT WORKS</a>
+					<a href='/encyclopedia'>ENCYCLOPEDIA</a>
+					<a href='/login'>LOGIN</a>
 				</div>
 				<div className='header-hamburger'>
 					<a href='/' onClick={this.openSidebar}>
