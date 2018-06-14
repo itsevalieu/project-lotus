@@ -1,11 +1,9 @@
 #hero {
-	/*border: 1px solid red;*/
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: flex-start;
 	height: 400px;
-	width: 100%;
 	text-align: left;
 }
 .hero-textbox {
@@ -13,12 +11,8 @@
 }
 
 /*==========Media Queries==========*/
-@media screen and (min-width: 1240px){
-
-}
-@media screen and (min-width: 945px) and (max-width: 1240px){
-
-}
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
 @media screen and (min-width: 760px) and (max-width: 945px){
 	#hero {
 		align-items: center;
@@ -26,10 +20,7 @@
 	}
 }
 @media only screen and (max-width: 760px) {
-	#hero {
-		align-items: center;
-		text-align: center;
-	}
+
 	.hero-textbox {
 		width: 100%;
 	}

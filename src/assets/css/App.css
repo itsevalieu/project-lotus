@@ -1,6 +1,5 @@
 main {
-  max-width: 1240px;
-  width: 100%;
+  max-width: 100vh;
   margin: 0px auto;
   padding: 0px 50px;
 }
@@ -16,10 +15,14 @@ button {
   width: 150px;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 1.5em;
+  font-family: expo-brand-demi, sans-serif;
+  color: rgba(0, 0, 32, 0.9);
+  font-weight: 400;
+  overflow-wrap: break-word;
+  font-size: 24px;
 }
 h3 {
   font-size: 1.4em;
@@ -35,6 +38,7 @@ h6 {
 }
 p {
   font-size: 1em;
+  padding: 0px 0px;
 }
 a {
   color: #333;
@@ -44,22 +48,16 @@ a {
 a:hover {
   color: #fac7c6;
 }
+ul {
+  list-style-type: none;
+}
 /*==========Media Queries==========*/
-@media screen and (min-width: 1240px){
-
-}
-@media screen and (min-width: 945px) and (max-width: 1240px){
-  main {
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 760px) and (max-width: 945px){
-  main {
-    margin: 0px auto;
-  }
-}
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){}
 @media only screen and (max-width: 760px) {
   main {
-    margin: 0px 0px;
+    padding: 0px 50px;
+    border: 1px solid red;
   }
 }

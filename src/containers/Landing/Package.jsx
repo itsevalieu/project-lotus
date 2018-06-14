@@ -1,36 +1,22 @@
 import React, { Component } from 'react';
 import '../../assets/css/Package.css';
-import icon1 from '../../assets/icons/icons8-Calendar 1.png';
-import icon3 from '../../assets/icons/icons8-Calendar 3.png';
-import icon6 from '../../assets/icons/icons8-Calendar 6.png';
-import icon12 from '../../assets/icons/icons8-Calendar 12.png';
 
 
 class PackageModule extends Component {
 	
 	render() {
 		return(
-			<div className='package-module'>
-				<button>
-					<img src={ icon1 } alt=''/>
-					<h2>Special Occasion</h2>
-					<p>One-Time Tea Gift</p>
-				</button>
-				<button>
-					<img src={ icon3 } alt=''/>
-					<h2>Month Subscription</h2>
-					<p>Subscribe for 3 months.</p>
-				</button>
-				<button>
-					<img src={ icon6 } alt=''/>
-					<h2>Month Subscription</h2>
-					<p>Subscribe for 6 months.</p>				
-				</button>
-				<button>
-					<img src={ icon12 } alt=''/>
-					<h2>Month Subscription</h2>
-					<p>Subscribe for 1 year.</p>
-				</button>				
+			<div id='package-module'>
+				<div>
+					<h2>Special Occasion Gift</h2>
+					<p>A one-time purchase where you customize a gift box for your special someone for their special occasion.</p>
+					<button>START GIFTING</button>
+				</div>
+				<div>
+					<h2>Tea Box Subscription</h2>
+					<p>Choose from three different types of monthly tea box subscriptions: basic, customizable, or seasonal.</p>
+					<button>SUBSCRIBE</button>
+				</div>	
 			</div>
 		);
 	}

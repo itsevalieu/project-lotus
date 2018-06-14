@@ -1,11 +1,66 @@
-.package-module {
+#package-module {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 200px;
+}
+#package-module div {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: space-between;
+	align-content: space-between;
+	text-align: left;
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 25px 15px;
+	width: 45%;
+	height: 300px;
+	line-height: 25px;
+}
+#package-module button {
+	min-height: 50px;
+  	width: 150px;
+}
+#package-module img {
+	width: 25px;
+	height: 25px;
+}
+
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	#package-module {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	#package-module div {
+		flex: 1 25%;
+	}
+}
+@media only screen and (max-width: 760px) {
+	#package-module {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin: 0px -50px;
+	}
+	#package-module div {
+		flex: 1 100%;
+		margin: 0px 0px;
+	}
+}
+
+/*.package-module {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 200px;
 	max-height: 600px;
-	/*padding: 2.5px 0px;*/
 }
 .package-module button {
 	background: white;
@@ -19,10 +74,10 @@
 	height: 35px;
 	padding: 0px 0px;
 	margin: 0px 0px;
-}
+}*/
 
 /*==========Media Queries==========*/
-@media screen and (min-width: 1240px){}
+/*@media screen and (min-width: 1240px){}
 @media screen and (min-width: 945px) and (max-width: 1240px){}
 @media screen and (min-width: 760px) and (max-width: 945px){
 	.package-module {
@@ -43,4 +98,4 @@
 	.package-module button {
 		flex: 1 100%;
 	}
-}
+}*/

@@ -6,18 +6,27 @@ class Footer extends Component {
 		return (
 			<footer>
 				<div>
-					<a href='/'>About Us</a>
-					<a href='/'>Jobs</a>
-					<a href='/'>Privacy Terms</a>
-					<a href='/'>Support Portal</a>
-					<a href='/'>FAQS</a>
-				</div>
-				<div>
-					<a href='/'><img src='../../assets/icons/fb-logo.png' alt='facebook-url'/></a>
-					<a href='/'>Instagram</a>
-					<a href='/'>Pinterest</a>
-					<a href='/'><img src='../../assets/icons/twitter-logo.png' alt='twitter-url'/></a>
-					<a href='/'>Blog</a>
+					<ul>
+						<li><p>Teafographic</p></li>
+						<li><a href='/terms'>Terms of Use</a></li>
+						<li><a href='/privacy'>Privacy Policy</a></li>
+						<li><a href='/guidelines'>Guidelines</a></li>
+					</ul>
+					<ul>
+						<li><p>Company</p></li>
+						<li><a href='/about'>About</a></li>
+						<li><a href='/jobs'>Jobs</a></li>
+						<li><a href='/blog'>Blog</a></li>
+					</ul>
+					
+					<ul>
+						<li><p>Social</p></li>
+						<li><a href='/'><img src='../../assets/icons/fb-logo.png' alt='facebook-url'/></a></li>
+						<li><a href='/'>Instagram</a></li>
+						<li><a href='/'>Pinterest</a></li>
+						<li><a href='/'><img src='../../assets/icons/twitter-logo.png' alt='twitter-url'/></a></li>
+						<li><a href='/'>Blog</a></li>
+					</ul>
 				</div>
 	        </footer>
         );
