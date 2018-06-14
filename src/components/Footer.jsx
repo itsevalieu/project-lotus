@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import '../assets/css/Footer.css';
+import pinterest_logo from '../assets/icons/pinterest-logo.png';
+import facebook_logo from '../assets/icons/facebook-logo.png';
+import instagram_logo from '../assets/icons/instagram-logo.png';
+import twitter_logo from '../assets/icons/twitter-logo.png';
 
 class Footer extends Component {
 	render() {
@@ -14,18 +18,18 @@ class Footer extends Component {
 					</ul>
 					<ul>
 						<li><p>Company</p></li>
-						<li><a href='/about'>About</a></li>
-						<li><a href='/jobs'>Jobs</a></li>
-						<li><a href='/blog'>Blog</a></li>
+						<li><a href='/about'>About Us</a></li>
+						<li><a href='/jobs'>Careers</a></li>
+						<li><a href='/blog'>Our Blog</a></li>
 					</ul>
-					
 					<ul>
 						<li><p>Social</p></li>
-						<li><a href='/'><img src='../../assets/icons/fb-logo.png' alt='facebook-url'/></a></li>
-						<li><a href='/'>Instagram</a></li>
-						<li><a href='/'>Pinterest</a></li>
-						<li><a href='/'><img src='../../assets/icons/twitter-logo.png' alt='twitter-url'/></a></li>
-						<li><a href='/'>Blog</a></li>
+						<span id='connect'>
+							<li><a href='/'><img src={facebook_logo} alt='facebook-url'/></a></li>
+							<li><a href='/'><img src={instagram_logo} alt='instagram-url'/></a></li>
+							<li><a href='/'><img src={twitter_logo} alt='twitter-url'/></a></li>
+							<li><a href='/'><img src={pinterest_logo} alt='pinterest-url'/></a></li>
+						</span>
 					</ul>
 				</div>
 	        </footer>
@@ -34,3 +38,8 @@ class Footer extends Component {
 };
 
 export default Footer;
+// <form>
+// 	<label for='newsletter'><p>Join Our Newsletter</p></label>
+// 	<input id='newsletter' name='newsletter' type='email' placeholder='Email Address'></input>
+// 	<input id='newsletter-submit' type='submit'></input>
+// </form>

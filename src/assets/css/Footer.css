@@ -1,20 +1,28 @@
 footer {
 	background: #acafaa;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	min-height: 200px;
 }
 footer div {
 	display: flex;
 	flex-flow: row;
-	justify-content: space-between;
-	margin: 0px auto;
+	justify-content: space-around;
+	margin: 0px 0px;
 	max-width: 100vh;
-	padding: 0px 50px;
+	width: 100%;
+	padding: 20px 50px;
 }
 footer p {
 	font-weight: 600;
 }
-footer img {
-	height: 22px;
-	width: 22px;
+footer span {
+	display: flex;
+	flex-direction: row;
+}
+#connect li {
+	margin: 0px  15px 0px 0px;
 }
 /*==========Media Queries==========*/
 @media screen and (min-width: 1240px){}

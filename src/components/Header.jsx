@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../assets/css/Header.css';
-import brand_logo from '../assets/icons/site-logo.png';
+import site_logo from '../assets/icons/site-logo.png';
 import hamburger from '../assets/icons/hamburger.png';
 
 class Header extends Component {
@@ -13,17 +13,18 @@ class Header extends Component {
 		return(
 			<header>
 				<div>
-					<a href='/' id='brand-logo'>
-						<img src={ brand_logo } alt='#' />
+					<a href='/' id='site-logo'>
+						<img src={ site_logo } alt='#' />
 					</a>	
 				</div>
 				<div>
-					<a href='/' id='brand-name'>teafographic</a>
+					<a href='/' id='site-name'>teafographic</a>
 				</div>
 				<div className='header-links'>
 					<a href='/learn'>HOW IT WORKS</a>
 					<a href='/encyclopedia'>ENCYCLOPEDIA</a>
-					<a href='/login'>LOGIN</a>
+					<a href='/login'>LOG IN</a>
+					<a href='/signup'><button>CREATE ACCOUNT</button></a>
 				</div>
 				<div className='header-hamburger'>
 					<a href='/' onClick={this.openSidebar}>
@@ -47,5 +48,3 @@ class Header extends Component {
 };
 
 export default Header;
-
-//need to reuse header, change the login/to logout? or maybe settings...? Or Account

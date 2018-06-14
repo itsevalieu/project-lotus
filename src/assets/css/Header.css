@@ -15,7 +15,7 @@ header img {
 	width: 40px;
 	height: 35px;
 }
-#brand-name {
+#site-name {
 	text-align: center; 
 	font-size: 30px;
 	font-weight: 100; 
@@ -32,7 +32,7 @@ header img {
 .header-hamburger {
 	display: none;
 }
-#brand-logo img {
+#site-logo img {
 	margin: 5px 10px;
 }
 

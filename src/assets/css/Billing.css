@@ -1,0 +1,104 @@
+#billing-module {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 400px;
+	background: #ddd;
+	min-width: 100vh;
+}
+#billing-module button{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 100%;
+	text-align: left;
+	background: #fff;  
+  	border: none;
+  	box-shadow: 0 0 0 rgba(0, 1, 31, 0.05);
+	height: 350px;
+	width: 30%;
+	line-height: 25px;
+}
+#products-module button:hover {
+	transform: scale(1.1);
+}
+#products-module img {
+	grid-row: 1 / 2;
+	height: 200px;
+	border: 1px solid #ddd;
+}
+.textbox {
+	grid-row: 2 / 3;
+}
+
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	#products-module {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	#products-module div {
+		flex: 1 25%;
+	}
+}
+@media only screen and (max-width: 760px) {
+	#products-module {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin: 0px -50px;
+	}
+	#products-module div {
+		flex: 1 100%;
+		margin: 0px 0px;
+	}
+}
+
+/*.package-module {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 200px;
+	max-height: 600px;
+}
+.package-module button {
+	background: white;
+	border: 1px solid #ddd;
+	height: 150px;
+	width: 250px;
+	line-height: 0px;
+}
+.package-module img {
+	width: 35px;
+	height: 35px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}*/
+
+/*==========Media Queries==========*/
+/*@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	.package-module {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	.package-module button {
+		flex: 1 50%;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.package-module {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	.package-module button {
+		flex: 1 100%;
+	}
+}*/

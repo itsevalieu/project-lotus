@@ -41,6 +41,8 @@ p {
   padding: 0px 0px;
 }
 a {
+  display: flex;
+  align-items: center;
   color: #333;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;

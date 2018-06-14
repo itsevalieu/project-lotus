@@ -1,54 +1,55 @@
-#package-module {
+#products-module {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 200px;
+	height: 400px;
 }
-#package-module div {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: space-between;
-	align-content: space-between;
+#products-module button{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 100%;
 	text-align: left;
-	background: #fff;
-	border: 1px solid #eee;
-	padding: 25px 15px;
-	width: 45%;
-	height: 300px;
+	background: #fff;  
+  	border: none;
+  	box-shadow: 0 0 0 rgba(0, 1, 31, 0.05);
+	height: 350px;
+	width: 30%;
 	line-height: 25px;
 }
-#package-module button {
-	min-height: 50px;
-  	width: 150px;
+#products-module button:hover {
+	transform: scale(1.1);
 }
-#package-module img {
-	width: 25px;
-	height: 25px;
+#products-module img {
+	grid-row: 1 / 2;
+	height: 200px;
+	border: 1px solid #ddd;
+}
+.textbox {
+	grid-row: 2 / 3;
 }
 
 /*==========Media Queries==========*/
 @media screen and (min-width: 1240px){}
 @media screen and (min-width: 945px) and (max-width: 1240px){}
 @media screen and (min-width: 760px) and (max-width: 945px){
-	#package-module {
+	#products-module {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 	}
-	#package-module div {
+	#products-module div {
 		flex: 1 25%;
 	}
 }
 @media only screen and (max-width: 760px) {
-	#package-module {
+	#products-module {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		margin: 0px -50px;
 	}
-	#package-module div {
+	#products-module div {
 		flex: 1 100%;
 		margin: 0px 0px;
 	}

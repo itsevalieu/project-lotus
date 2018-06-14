@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../assets/css/Billing.css';
 import icon1 from '../../assets/icons/icons8-Calendar 1.png';
 import icon3 from '../../assets/icons/icons8-Calendar 3.png';
 import icon6 from '../../assets/icons/icons8-Calendar 6.png';
@@ -8,29 +9,39 @@ class Shop extends Component {
 	
 	render() {
 		return(
-			<main className='container'>
-				<h2>Shop Page</h2>
-				<div>
-					<h2>Special Occasion Gift</h2>
-					<p>A one-time purchase where you customize a gift box for your special someone for their special occasion.</p>
-					<button></button>
+			<div>
+				<p>02. CHOOSE YOUR BILLING PLAN</p>
+				<div id='billing-module'>
+					<button>
+						<img src='' alt=''/>
+						<div className='textbox'>
+							<h2>Monthly</h2>
+							<p>Pay your subscription plan every month!</p>
+						</div>
+					</button>
+					<button>
+						<img src='' alt=''/>
+						<div className='textbox'>
+							<h2>Quarterly</h2>
+							<p>Pay your plan every three months!</p>
+						</div>
+					</button>
+					<button>
+						<img src='' alt=''/>
+						<div className='textbox'>
+							<h2>Semi-Yearly</h2>
+							<p>Pay your plan every six months!</p>				
+						</div>
+					</button>
+					<button>
+						<img src='' alt=''/>
+						<div className='textbox'>
+							<h2>Yearly</h2>
+							<p>Make a one-time payment for a whole year!</p>
+						</div>
+					</button>
 				</div>
-				<div>
-					<h2>Teafographic Subscription</h2>
-					<p>A monthly tea box subscription where WE choose the teas for you. Surprise!</p>
-					<button></button>
-				</div>
-				<div>
-					<h2>Customized Subscription</h2>
-					<p>A monthly tea box subscription where YOU choose the teas you know you want.</p>				
-					<button></button>
-				</div>
-				<div>
-					<h2>Seasonal Subscription</h2>
-					<p>A monthly tea box in which we curate the best teas for you based on the season.</p>
-					<button></button>
-				</div>
-			</main>
+			</div>
 		);
 	}
 	
