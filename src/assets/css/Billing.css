@@ -3,9 +3,9 @@
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 400px;
 	background: #ddd;
-	min-width: 100vh;
+	height: 100%;
+	border: 1px solid red;
 }
 #billing-module button{
 	display: grid;
@@ -15,17 +15,7 @@
 	background: #fff;  
   	border: none;
   	box-shadow: 0 0 0 rgba(0, 1, 31, 0.05);
-	height: 350px;
-	width: 30%;
 	line-height: 25px;
-}
-#products-module button:hover {
-	transform: scale(1.1);
-}
-#products-module img {
-	grid-row: 1 / 2;
-	height: 200px;
-	border: 1px solid #ddd;
 }
 .textbox {
 	grid-row: 2 / 3;
@@ -35,23 +25,23 @@
 @media screen and (min-width: 1240px){}
 @media screen and (min-width: 945px) and (max-width: 1240px){}
 @media screen and (min-width: 760px) and (max-width: 945px){
-	#products-module {
+	#billing-module {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 	}
-	#products-module div {
+	#billing-module div {
 		flex: 1 25%;
 	}
 }
 @media only screen and (max-width: 760px) {
-	#products-module {
+	#billing-module {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		margin: 0px -50px;
+		margin: 0px 0px;
 	}
-	#products-module div {
+	#billing-module div {
 		flex: 1 100%;
 		margin: 0px 0px;
 	}

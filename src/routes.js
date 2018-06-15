@@ -7,7 +7,7 @@ import App from './containers/App/App.js';
 import Landing from './containers/Landing/Landing.jsx';
 import About from './containers/Pages/About.jsx';
 import Encyclopedia from './containers/Encyclopedia/Encyclopedia.jsx';
-import Shop from './containers/Landing/Shop.jsx';
+import Billing from './containers/Landing/Billing.jsx';
 
 const routes = (
 	<Router>
@@ -15,7 +15,7 @@ const routes = (
 			<Route exact path='/' component={ Landing } />
 			<Route exact path='/about' component={ About } />
 			<Route exact path='/encyclopedia' component={ Encyclopedia } />
-			<Route exact path='/shop' component={ Shop } />			
+			<Route exact path='/billing' component={ Billing } />			
 		</App>
 	</Router>
 );

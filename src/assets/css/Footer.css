@@ -3,7 +3,6 @@ footer {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
-	min-height: 200px;
 }
 footer div {
 	display: flex;

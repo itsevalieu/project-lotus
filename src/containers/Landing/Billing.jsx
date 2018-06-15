@@ -5,7 +5,7 @@ import icon3 from '../../assets/icons/icons8-Calendar 3.png';
 import icon6 from '../../assets/icons/icons8-Calendar 6.png';
 import icon12 from '../../assets/icons/icons8-Calendar 12.png';
 
-class Shop extends Component {
+class Billing extends Component {
 	
 	render() {
 		return(
@@ -47,4 +47,4 @@ class Shop extends Component {
 	
 }
 
-export default Shop;
+export default Billing;

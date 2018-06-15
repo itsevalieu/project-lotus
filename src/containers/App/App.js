@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header.jsx';
 import Footer from '../../components/Footer.jsx';
+import Sidebar from '../../components/Sidebar.jsx';
 import '../../assets/css/App.css';
 
 class App extends Component {
@@ -29,10 +30,12 @@ class App extends Component {
     return (
       <div>
         <Header/>
+        <Sidebar/>
         <main>
           {this.props.children}
         </main>
         <Footer/>
+
       </div>
     );
   }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../../assets/css/ProductsModule.css';
+import '../../assets/css/Product.css';
 
 
-class ProductsModule extends Component {
+class Product extends Component {
 	
 	render() {
 		return(
@@ -36,7 +36,7 @@ class ProductsModule extends Component {
 	}
 };
 
-export default ProductsModule;
+export default Product;
 // <div className='package-option'>
 // 	<h2>Special Occasion Gift</h2>
 // 	<p>A one-time purchase where you customize a gift box for your special someone for their special occasion.</p>

@@ -3,7 +3,6 @@
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 400px;
 }
 #products-module button{
 	display: grid;
@@ -38,8 +37,8 @@
 		flex-flow: row wrap;
 		justify-content: space-between;
 	}
-	#products-module div {
-		flex: 1 25%;
+	#products-module button {
+		flex: 1 100%;
 	}
 }
 @media only screen and (max-width: 760px) {
@@ -47,9 +46,9 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		margin: 0px -50px;
+		margin: 0px 0px;
 	}
-	#products-module div {
+	#products-module button {
 		flex: 1 100%;
 		margin: 0px 0px;
 	}
