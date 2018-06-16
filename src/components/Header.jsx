@@ -24,7 +24,7 @@ class Header extends Component {
 					<a href='/learn'>HOW IT WORKS</a>
 					<a href='/encyclopedia'>ENCYCLOPEDIA</a>
 					<a href='/login'>LOG IN</a>
-					<a href='/signup'><button>CREATE ACCOUNT</button></a>
+					<a href='/register'><button>CREATE ACCOUNT</button></a>
 				</div>
 				<div className='header-hamburger'>
 					<a href='/' onClick={this.openSidebar}>

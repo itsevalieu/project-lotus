@@ -9,33 +9,33 @@ class Billing extends Component {
 	
 	render() {
 		return(
-			<div>
-				<p>02. CHOOSE YOUR BILLING PLAN</p>
-				<div id='billing-module'>
+			<div className='billing'>
+				<div><h3>02. CHOOSE YOUR BILLING PLAN</h3></div>
+				<div className='billing-buttons'>
 					<button>
-						<img src='' alt=''/>
-						<div className='textbox'>
+						<img src={icon1} alt=''/>
+						<div className='billing-buttons-text'>
 							<h2>Monthly</h2>
 							<p>Pay your subscription plan every month!</p>
 						</div>
 					</button>
 					<button>
-						<img src='' alt=''/>
-						<div className='textbox'>
+						<img src={icon3} alt=''/>
+						<div className='billing-buttons-text'>
 							<h2>Quarterly</h2>
 							<p>Pay your plan every three months!</p>
 						</div>
 					</button>
 					<button>
-						<img src='' alt=''/>
-						<div className='textbox'>
+						<img src={icon6} alt=''/>
+						<div className='billing-buttons-text'>
 							<h2>Semi-Yearly</h2>
 							<p>Pay your plan every six months!</p>				
 						</div>
 					</button>
 					<button>
-						<img src='' alt=''/>
-						<div className='textbox'>
+						<img src={icon12} alt=''/>
+						<div className='billing-buttons-text'>
 							<h2>Yearly</h2>
 							<p>Make a one-time payment for a whole year!</p>
 						</div>

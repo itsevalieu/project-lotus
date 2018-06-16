@@ -28,6 +28,8 @@ header img {
 }
 .header-links a {
 	margin: 0px 12px;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .header-hamburger {
 	display: none;
@@ -40,26 +42,27 @@ header img {
 @media screen and (min-width: 1240px){}
 @media screen and (min-width: 945px) and (max-width: 1240px){}
 @media screen and (min-width: 760px) and (max-width: 945px){
-	#brand-name {
+	#site-name {
 		font-size: 28px;
 	}
 	header img {
 		width: 35px;
 		height: 30px;
 	}
+	.header-links a {
+		font-size: 15px;
+	}
 }
 @media only screen and (max-width: 760px) {
 	header {
 		justify-content: space-between;
+		align-items: center;
 	}
 	.header-links {
 		display: none;
 	}
 	.header-hamburger {
 		display: block;
-	}
-	#brand-name {
-		font-size: 24px;
 	}
 	header img {
 		width: 30px;

@@ -1,94 +1,84 @@
-#billing-module {
+.billing {
 	display: flex;
-	flex-flow: row;
+	flex-flow: column nowrap;
 	justify-content: space-between;
-	align-items: center;
+	padding: 15px 100px 25px 100px;
+	margin: 0px 0px;
 	background: #ddd;
+}
+.billing-buttons {
+	display: flex;
+	flex-flow: row wrap;
 	height: 100%;
-	border: 1px solid red;
+	width: 100%;
+	justify-content: space-around;
+	align-items: space-between;
 }
-#billing-module button{
-	display: grid;
+.billing-buttons button {
+/*	display: grid;
 	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 100%;
-	text-align: left;
+	grid-template-columns: 100%;*/
+	display: flex;
+	text-align: center;
 	background: #fff;  
-  	border: none;
-  	box-shadow: 0 0 0 rgba(0, 1, 31, 0.05);
-	line-height: 25px;
+  	box-shadow: 1px 1px 1px rgba(0, 1, 31, 0.05);
+  	min-height: 250px;
+  	border: 1px solid #eee;
+  	/*min-width: 190px;*/
+  	/*max-width: 190px;*/
+  	/*line-height: 25px;*/
+  	flex: 1 50%;
+  	padding: 0px 20px;
+  	margin: 10px 10px;
+  	align-items: space-between;
+  	justify-content: space-between;
 }
-.textbox {
-	grid-row: 2 / 3;
+.billing-buttons button:hover {
+	transform: scale(1.02);
+}
+.billing-buttons img {
+/*	grid-column: 1 / 2;
+	grid-row: 1 / 2;*/
+	height: 50px;
+	width: 50px;
+	margin: 0px auto;
+}
+.billing-buttons-text {
+	/*grid-column: 1 / 2;
+	grid-row: 2 / 3;*/
 }
 
 /*==========Media Queries==========*/
 @media screen and (min-width: 1240px){}
-@media screen and (min-width: 945px) and (max-width: 1240px){}
-@media screen and (min-width: 760px) and (max-width: 945px){
-	#billing-module {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+@media screen and (min-width: 945px) and (max-width: 1240px){
+	.billing {
+		padding: 15px 75px 25px 75px;
 	}
-	#billing-module div {
-		flex: 1 25%;
-	}
-}
-@media only screen and (max-width: 760px) {
-	#billing-module {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		margin: 0px 0px;
-	}
-	#billing-module div {
-		flex: 1 100%;
-		margin: 0px 0px;
-	}
-}
-
-/*.package-module {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 200px;
-	max-height: 600px;
-}
-.package-module button {
-	background: white;
-	border: 1px solid #ddd;
-	height: 150px;
-	width: 250px;
-	line-height: 0px;
-}
-.package-module img {
-	width: 35px;
-	height: 35px;
-	padding: 0px 0px;
-	margin: 0px 0px;
-}*/
-
-/*==========Media Queries==========*/
-/*@media screen and (min-width: 1240px){}
-@media screen and (min-width: 945px) and (max-width: 1240px){}
-@media screen and (min-width: 760px) and (max-width: 945px){
-	.package-module {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-	}
-	.package-module button {
+	.billing-buttons button {
 		flex: 1 50%;
+		margin: 10px 15px;
+	  	padding: 0px 20px;
+	}
+}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	.billing {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 15px 50px;
+	}
+	.billing-buttons button {
+		flex: 1 auto;
+		margin: 10px 10px;
 	}
 }
 @media only screen and (max-width: 760px) {
-	.package-module {
-		display: flex;
+	.billing {
 		flex-flow: row wrap;
 		justify-content: space-between;
+		padding: 15px 25px 25px 25px;
 	}
-	.package-module button {
+	.billing-buttons button {
 		flex: 1 100%;
+
 	}
-}*/
+}
