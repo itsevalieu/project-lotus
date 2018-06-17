@@ -6,7 +6,7 @@ class Product extends Component {
 	render() {
 		return(
 			<div className='product'>
-				<div><h3>01. CHOOSE YOUR SUBSCRIPTION</h3></div>
+				<div><h3>CHOOSE YOUR SUBSCRIPTION</h3></div>
 				<div className='product-buttons'>
 					<button>
 						<img src='' alt=''/>

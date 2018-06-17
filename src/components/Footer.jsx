@@ -30,6 +30,7 @@ class Footer extends Component {
 							<li><a href='/'><img src={twitter_logo} alt='twitter-url'/></a></li>
 							<li><a href='/'><img src={pinterest_logo} alt='pinterest-url'/></a></li>
 						</span>
+						<li><p>© 2018 EVA LIEU</p></li>
 					</ul>
 				</div>
 	        </footer>

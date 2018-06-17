@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import '../../assets/css/Results.css';
+import '../assets/css/Results.css';
+import Card from './Card.jsx';
 
 class Results extends Component {
 	render() {
 		return(
-			<div id='results'>
-				<div>
-					<h2>Search Results</h2>		
+			<div className='results'>
+				<div><p>Search results for:</p></div>
+				<div className='results-cards' id='results'>
+					<Card/>
+					<Card/>
+					<Card/>
 				</div>
 			</div>
 		);
