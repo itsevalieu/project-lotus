@@ -1,9 +1,14 @@
 .sidebar {
-	background: #acafaa;
+	background: #fff;
 	height: 35px;
-	z-index: -1;
-	box-shadow: 1px 2px 5px 3px #333;
-	text-shadow: 1px 1px 1px #ccc;
+}
+.sidebar-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	height: 100%;
 }
 .sidebar a {
 	color: #000;
@@ -11,14 +16,6 @@
 }
 #sidebar {
 	display: none;
-}
-.cat {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-	height: 100%;
 }
 
 /*==========Media Queries==========*/

@@ -2,7 +2,7 @@
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
-	padding: 15px 0px;
+	padding: 20px 0px;
 	margin: 0 100px;
 }
 .product-buttons {
@@ -29,8 +29,14 @@
 }
 .product-buttons img {
 	grid-row: 1 / 2;
-	height: 200px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 	border: 1px solid #ddd;
+}
+.product-button-image-div {
+	height: 200px;
+	width: 100%;
 }
 .product-buttons-text {
 	grid-row: 2 / 3;
@@ -64,7 +70,7 @@
 		flex-flow: row wrap;
 		justify-content: space-between;
 		margin: 0px 0px;
-		padding: 15px 25px;
+		padding: 20px 25px;
 	}
 	.product-buttons {
 		display: flex;
