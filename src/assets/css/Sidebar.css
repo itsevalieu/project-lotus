@@ -1,6 +1,7 @@
 .sidebar {
-	background: #fff;
 	height: 35px;
+	position: absolute;
+	width: 100%;
 }
 .sidebar-links {
 	display: flex;
@@ -16,10 +17,15 @@
 }
 #sidebar {
 	display: none;
+	z-index: -500;
 }
 
 /*==========Media Queries==========*/
 @media screen and (min-width: 1240px){}
 @media screen and (min-width: 945px) and (max-width: 1240px){}
 @media screen and (min-width: 760px) and (max-width: 945px){}
-@media only screen and (max-width: 760px) {}
+@media only screen and (max-width: 760px) {
+	#sidebar {
+		z-index: 500;
+	}
+}
