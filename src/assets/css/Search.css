@@ -9,6 +9,7 @@
 	flex-flow: column nowrap;
 }
 .search input {
+	border: 1px solid #ddd;
 	width: 85%;
 	height: 50px;
 	text-overflow: ellipsis;
