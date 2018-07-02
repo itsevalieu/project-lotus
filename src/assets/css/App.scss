@@ -1,3 +1,5 @@
+main {}
+
 button {
   background: #fac7c6;
   border-radius: 3px;
@@ -7,56 +9,60 @@ button {
   font-weight: 400;
   height: 50px;
   width: 150px;
-  text-align: center; }
-
+  text-align: center;
+}
 h1 {
-  font-size: 2.5em; }
-
+  font-size: 2.5em;
+}
 h2 {
   font-family: expo-brand-demi, sans-serif;
   color: rgba(0, 0, 32, 0.9);
   font-weight: 400;
   overflow-wrap: break-word;
-  font-size: 1.5em; }
-
+  font-size: 1.5em;
+}
 h3 {
   font-size: 1.1em;
-  font-weight: 300; }
-
+  font-weight: 300;
+}
 h4 {
-  font-size: 1.3em; }
-
+  font-size: 1.3em;
+}
 h5 {
-  font-size: 1.2em; }
-
+  font-size: 1.2em;
+}
 h6 {
-  font-size: 1.1em; }
-
+  font-size: 1.1em;
+}
 p {
   font-size: 1em;
-  padding: 0px 0px; }
-
+  padding: 0px 0px;
+}
 a {
   display: flex;
   align-items: center;
   color: #333;
   font-family: 'Dosis', sans-serif;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 a:hover {
-  color: #aaa; }
-
+  color: #aaa;
+}
 ul {
-  list-style-type: none; }
-
+  list-style-type: none;
+}
 button a {
-  justify-content: center; }
-
+  justify-content: center;
+}
 button {
-  font-size: 0.8em; }
-
+  font-size: 0.8em;
+}
 button:hover {
   transform: scale(1.01);
-  box-shadow: 2px 2px 2px #ddd; }
-
+  box-shadow: 2px 2px 2px #ddd;
+}
 /*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){}
+@media only screen and (max-width: 760px) {}

@@ -15,6 +15,7 @@
 	text-overflow: ellipsis;
 	float: left;
 	padding: 0px 5px;
+	font-size: 1em;
 }
 .search button {
 	float: right;

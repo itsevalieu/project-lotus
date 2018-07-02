@@ -31,6 +31,9 @@ header img {
 	margin: 0px 12px;
 	white-space: nowrap;
 }
+.header-links button {
+	font-size: 0.8em;
+}
 .header-links a:hover {
 	text-decoration: underline;
 }
