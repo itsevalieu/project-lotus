@@ -5,7 +5,7 @@ Responsive landing page for a subscription-based product.
 ## Technologies: 
 1. React
 2. Javascript
-3. Custom CSS
+3. Custom CSS, SCSS
 4. Netlify to Deploy
 
 ## Will Include:
