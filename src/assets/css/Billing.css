@@ -1,101 +1,89 @@
 .billing {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-	padding: 20px 100px 25px 100px;
-	margin: 0px 0px;
-	background: #ddd;
-}
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px 100px 25px 100px;
+  margin: 0px 0px;
+  background: #ddd; }
+
 .billing-buttons {
-	display: flex;
-	flex-flow: row wrap;
-	height: 100%;
-	width: 100%;
-	justify-content: space-between;
-	align-items: space-between;
-}
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: space-between; }
+
 .billing-buttons button {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 100%;
-	text-align: center;
-	background: #fff;  
-  	box-shadow: 1px 1px 1px rgba(0, 1, 31, 0.05);
-  	min-height: 250px;
-  	border: 1px solid #eee;
-  	min-width: 200px;
-  	max-width: 200px;
-  	line-height: 25px;
-  	flex: 1 50%;
-  	padding: 0px 20px;
-  	margin: 10px 10px;
-}
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 1, 31, 0.05);
+  min-height: 250px;
+  border: 1px solid #eee;
+  min-width: 200px;
+  max-width: 200px;
+  line-height: 25px;
+  flex: 1 50%;
+  padding: 0px 20px;
+  margin: 10px 10px; }
+
 .billing-buttons button:hover {
-	transform: scale(1.02);
-}
+  transform: scale(1.02); }
+
 .billing-buttons img {
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
-	height: 40px;
-	width: 40px;
-	margin: 20px auto;
-	align-self: start;
-}
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 40px;
+  width: 40px;
+  margin: 20px auto;
+  align-self: start; }
+
 .billing-buttons-text {
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-	width: 100%;
-}
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 100%; }
+
 .billing-buttons-text h3 {
-	width: 100%;
-}
+  width: 100%; }
+
 .billing-buttons-text p {
-	text-align: left;
-}
+  text-align: left; }
 
 /*==========Media Queries==========*/
-@media screen and (min-width: 1240px){}
-@media screen and (min-width: 945px) and (max-width: 1240px){
-	.billing {
-		padding: 20px 75px 25px 75px;
-	}
-	.billing-buttons {
-		justify-content: space-around;
-	}
-	.billing-buttons button {
-		flex: 1 50%;
-		margin: 10px 15px;
-	  	padding: 0px 20px;
-	}
-}
-@media screen and (min-width: 760px) and (max-width: 945px){
-	.billing {
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 20px 50px;
-	}
-	.billing-buttons {
-		justify-content: space-around;
-	}
-	.billing-buttons button {
-		flex: 1 50%;
-		margin: 10px 10px;
-		min-width: 230px;
-  		max-width: 230px;
-	}
-}
+@media screen and (min-width: 945px) and (max-width: 1240px) {
+  .billing {
+    padding: 20px 75px 25px 75px; }
+  .billing-buttons {
+    justify-content: space-around; }
+  .billing-buttons button {
+    flex: 1 50%;
+    margin: 10px 15px;
+    padding: 0px 20px; } }
+
+@media screen and (min-width: 760px) and (max-width: 945px) {
+  .billing {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 50px; }
+  .billing-buttons {
+    justify-content: space-around; }
+  .billing-buttons button {
+    flex: 1 50%;
+    margin: 10px 10px;
+    min-width: 230px;
+    max-width: 230px; } }
+
 @media only screen and (max-width: 760px) {
-	.billing {
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 20px 25px 25px 25px;
-	}
-	.billing-buttons {
-		justify-content: space-around;
-	}
-	.billing-buttons button {
-		flex: 1 100%;
-		min-width: 250px;
-  		max-width: 250px;
-	}
-}
+  .billing {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 25px 25px 25px; }
+  .billing-buttons {
+    justify-content: space-around; }
+  .billing-buttons button {
+    flex: 1 100%;
+    min-width: 250px;
+    max-width: 250px; } }
