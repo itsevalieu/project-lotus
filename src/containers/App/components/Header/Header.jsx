@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../assets/css/Header.css';
-import site_logo from '../assets/icons/site-logo.png';
-import hamburger from '../assets/icons/hamburger.png';
+import './Header.css';
+import site_logo from '../../../../assets/icons/site-logo.png';
+import hamburger from '../../../../assets/icons/hamburger.png';
 
 class Header extends Component {
 	constructor(props){

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../../assets/css/Billing.css';
-import icon1 from '../../assets/icons/icons8-Calendar 1.png';
-import icon3 from '../../assets/icons/icons8-Calendar 3.png';
-import icon6 from '../../assets/icons/icons8-Calendar 6.png';
-import icon12 from '../../assets/icons/icons8-Calendar 12.png';
+import './Billing.css';
+import icon1 from '../../../../assets/icons/icons8-Calendar 1.png';
+import icon3 from '../../../../assets/icons/icons8-Calendar 3.png';
+import icon6 from '../../../../assets/icons/icons8-Calendar 6.png';
+import icon12 from '../../../../assets/icons/icons8-Calendar 12.png';
 
 class Billing extends Component {
 	

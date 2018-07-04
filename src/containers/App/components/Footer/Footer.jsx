@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../assets/css/Footer.css';
-import pinterest_logo from '../assets/icons/pinterest-logo.png';
-import facebook_logo from '../assets/icons/facebook-logo.png';
-import instagram_logo from '../assets/icons/instagram-logo.png';
-import twitter_logo from '../assets/icons/twitter-logo.png';
+import './Footer.css';
+import pinterest_logo from '../../../../assets/icons/pinterest-logo.png';
+import facebook_logo from '../../../../assets/icons/facebook-logo.png';
+import instagram_logo from '../../../../assets/icons/instagram-logo.png';
+import twitter_logo from '../../../../assets/icons/twitter-logo.png';
 
 class Footer extends Component {
 	render() {

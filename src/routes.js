@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 import App from './containers/App/App.js';
 import Landing from './containers/Landing/Landing.jsx';
-import About from './containers/Pages/About.jsx';
+import About from './containers/Pages/components/About/About.jsx';
 import Encyclopedia from './containers/Encyclopedia/Encyclopedia.jsx';
-import Billing from './containers/Landing/Billing.jsx';
+import Billing from './containers/Landing/components/Billing/Billing.jsx';
 
 const routes = (
 	<Router>

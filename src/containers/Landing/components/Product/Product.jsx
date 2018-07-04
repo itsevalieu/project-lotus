@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../../assets/css/Product.css';
-import image1 from '../../assets/images/thought.jpg';
-import image2 from '../../assets/images/carolyn.jpg';
-import image3 from '../../assets/images/brigitte.jpg';
+import './Product.css';
+import image1 from '../../../../assets/images/thought.jpg';
+import image2 from '../../../../assets/images/carolyn.jpg';
+import image3 from '../../../../assets/images/brigitte.jpg';
 
 class Product extends Component {
 	

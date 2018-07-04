@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Hero from './Hero.jsx';
-import Product from './Product.jsx';
-import Billing from './Billing.jsx';
-import Search from '../../components/Search.jsx';
-import '../../assets/css/Landing.css';
+import Hero from './components/Hero/Hero.jsx';
+import Product from './components/Product/Product.jsx';
+import Billing from './components/Billing/Billing.jsx';
+import './Landing.css';
 
 class Landing extends Component {
 	render() {
@@ -12,7 +11,6 @@ class Landing extends Component {
 				<Hero/>
 				<Product/>
 				<Billing/>
-				<Search/>
 			</div>
 		);
 	}

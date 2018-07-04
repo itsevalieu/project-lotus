@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import '../../assets/css/About.css';
-import Hero from '../Landing/Hero.jsx';
+import './About.css';
 
 class About extends Component {
 	
 	render() {
 		return(
 			<div className='about'>
-				<Hero/>
 				<div className='side'>
 					<div className='link-name'>
 						<h2>About Us</h2>

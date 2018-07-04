@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../../assets/css/Encyclopedia.css';
-import Search from '../../components/Search.jsx';
-import Results from '../../components/Results.jsx';
+import './Encyclopedia.css';
+import Search from './components/Search/Search.jsx';
+import Results from './components/Results/Results.jsx';
 
 class Encyclopedia extends Component {
 	constructor() {
