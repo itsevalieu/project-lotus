@@ -1,36 +1,30 @@
 .results {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-	padding: 0px 0px;
-	padding: 0 100px;
-	min-height: 300px;
-	background: #eee;
-}
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0px 0px;
+  padding: 0 100px;
+  min-height: 300px;
+  background: #eee; }
+
 .results-cards {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
 
 /*==========Media Queries==========*/
-@media screen and (min-width: 1240px){}
-@media screen and (min-width: 945px) and (max-width: 1240px){
-	.results {
-		padding: 0px 75px;
-	}
-}
-@media screen and (min-width: 760px) and (max-width: 945px){
-	.results {
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 0px 50px;
-	}
-}
+@media screen and (min-width: 945px) and (max-width: 1240px) {
+  .results {
+    padding: 0px 75px; } }
+
+@media screen and (min-width: 760px) and (max-width: 945px) {
+  .results {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 50px; } }
+
 @media only screen and (max-width: 760px) {
-	.results {
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 0px 25px;
-	}
-}
+  .results {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 25px; } }
