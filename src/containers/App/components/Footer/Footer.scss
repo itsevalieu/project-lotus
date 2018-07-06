@@ -3,22 +3,23 @@ footer {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
-}
-footer div {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
-	margin: 0px 0px;
-	/*max-width: 100vh;*/
-	width: 100%;
-	padding: 20px 100px;
-}
-footer p {
-	font-weight: 600;
-}
-footer span {
-	display: flex;
-	flex-direction: row;
+	
+	div {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		margin: 0px 0px;
+		width: 100%;
+		padding: 20px 100px;
+	}
+	p {
+		font-weight: 600;
+
+	}
+	span {
+		display: flex;
+		flex-direction: row;
+	}
 }
 #connect li {
 	margin: 0px  15px 0px 0px;
