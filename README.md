@@ -1,6 +1,8 @@
 # Project Lotus
 
-Responsive landing page for a subscription-based product. 
+*Status: Core Features Complete, Additional Features In-Progress*
+
+Responsive landing page for a tea subscription website.
 
 ## Technologies: 
 1. React
@@ -8,7 +10,11 @@ Responsive landing page for a subscription-based product.
 3. Custom CSS, SCSS
 4. Netlify to Deploy
 
-## Will Include:
+## Completed Features:
+1. Custom Web Design
+2. Mobile Responsive
+
+## Features to Include:
 1. Encyclopedia
 	- Searchbar
 	- Result cards
@@ -16,3 +22,8 @@ Responsive landing page for a subscription-based product.
 	- Star Ranking
 2. Quizzes
 3. User Dashboard
+4. Login Authentication
+5. Sample Pages (About, Company, etc)
+
+## Known Issues:
+1. Slow image rendering
