@@ -22,6 +22,9 @@ Responsive landing page for a tea subscription website.
 	- Star Ranking
 2. Quizzes
 3. User Dashboard
+	- Add Favorite Teas
+	- Get Favorite Teas
+	- Delete Teas
 4. Login Authentication
 5. Sample Pages (About, Company, etc)
 
