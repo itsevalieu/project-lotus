@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Card.css';
+import tea from '../../../../assets/images/tea/jasmine pearl.jpg';
 
 class Card extends Component {
 	constructor(props) {
@@ -11,6 +12,8 @@ class Card extends Component {
 	    	brew_time: 'brew time',
 	    	benefits: ['benefits', 'benefits'],
 	    	description: 'description',
+	    	image_url: '',
+	    	image_alt: '',
 	    	saved: false,
 	    	added_to_box: false,
 	    	open_comments: false
@@ -19,8 +22,9 @@ class Card extends Component {
 	render() {
 		return(
 			<div id='card' className='card'>
+
 				<div className='card-image'>
-					<img src='/' alt=''/>
+					<img src={tea} alt='Jasmine Pearl'/>
 				</div>
 				<div className='card-details'>
 					<ul>
@@ -32,10 +36,10 @@ class Card extends Component {
 					</ul>
 				</div>
 				<div className='card-buttons'>
-					<button>COMMENTS</button>
-					<button>SAVE FOR LATER</button>
-					<button>ADD TO TEA BOX</button>
+					<div className='button-comment'></div>
+					<div className='button-add'></div>
 				</div>
+				<div className='button-bookmark'></div>
 			</div>
 		);
 	}
