@@ -4,17 +4,23 @@
   height: 300px;
   border: 1px solid #ddd;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 2fr auto;
   grid-template-areas: 'image detail' 'image button';
-  margin: 10px 10px; }
+  margin: 10px 10px; 
+  position: relative;}
 
 .card-image {
   grid-area: image;
-  background: #000; }
+background: black}
+
+.card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover }
 
 .card-details {
-  grid-area: detail; }
+  grid-area: detail;}
 
 .card-details ul {
   font-size: 0.8em;
@@ -23,15 +29,31 @@
 .card-buttons {
   grid-area: button;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 5px 5px; }
+  justify-content: flex-end;
+  align-items: center;}
 
+.button-bookmark {
+  background: none;
+  margin: 0px 10px;
+  content: '';
+  height: 55px;
+  border-left: 15px solid #CC1506;
+  border-right: 15px solid #CC1506;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  top: 0px;
+  right: 10px;
+}
+.button-bookmark:hover {
+  cursor: pointer;
+}
 /*==========Media Queries==========*/
-@media screen and (min-width: 760px) and (max-width: 945px) {
+@media screen and (min-width: 460px) and (max-width: 945px) {
   .card {
     height: 250px;
-    grid-template-columns: minmax(75px, 125px) auto minmax(50px, 50px);
+    grid-template-columns: minmax(75px, 1px) auto minmax(50px, 50px);
     grid-template-rows: 2fr;
     grid-template-areas: 'image detail button'; }
   .card-buttons {
@@ -40,11 +62,12 @@
     width: 100%;
     height: 100%; } }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 460px) {
   .card {
-    height: 500px;
-    grid-template-rows: 1fr 2fr auto;
-    grid-template-columns: minmax(100px);
-    grid-template-areas: 'image image' 'detail detail' 'button button'; }
+    height: 450px;
+    grid-template-rows: 100px 2fr auto;
+    grid-template-columns: auto;
+    grid-template-areas: 'image' 'detail' 'button'; }
   .card-buttons button {
-    width: auto; } }
+    width: auto; }}
+
