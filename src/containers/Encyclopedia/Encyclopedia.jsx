@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Encyclopedia.css';
+import './components/Card/Card.css';
 import Search from './components/Search/Search.jsx';
 import Results from './components/Results/Results.jsx';
 
@@ -7,23 +8,64 @@ class Encyclopedia extends Component {
 	constructor() {
 		super();
 		this.state = {
-			search: '',
+			query: '',
 			results: []
 		}
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleChange = this.handleChange.bind(this);
+
 	}
-	// onChange(e) {
-	// 	this.setState({search: e.target.value});
-	// }
-	// getResults() {
-	// 	calltodb(search).then(e => {
-	// 		this.setState({searchResults: e.value});
-	// 	});
-	// }
+	handleChange(e) {
+		this.setState({
+			query: e.target.value
+		});
+	}
+	handleSubmit(e) {
+		e.preventDefault();
+		console.log(this.state.query);
+		document.getElementById('searchbar').value = '';
+	}
+	componentDidMount() {
+		fetch('https://randomuser.me/api/?results=10')
+		.then(results => {
+			return results.json();
+		}).then(data => {
+			console.log('data', data.results);
+			let results = data.results.map((user, index) => {
+				let userName = user.name.first.charAt(0).toUpperCase() + user.name.first.slice(1) + ' ' + user.name.last.charAt(0).toUpperCase() + user.name.last.slice(1);
+
+				return(
+					<div id='card' className='card' key={index}>
+						<div className='card-image'>
+							<img src={user.picture.large} alt='Jasmine Pearl'/>
+						</div>
+						<div className='card-details'>
+							<ul>
+								<li><h2>Name: {userName}</h2></li>
+								<li><p>Type:  {}</p></li>
+								<li><p>Brew Time:  {}</p></li>
+								<li><p>Benefits:  {}</p></li>
+								<li><p>Description:  {}</p></li>			
+							</ul>
+						</div>
+						<div className='card-buttons'>
+							<div className='button-comment'></div>
+							<div className='button-add'></div>
+						</div>
+						<div className='button-bookmark'></div>
+					</div>
+				);
+			});
+			this.setState({results: results});
+			console.log('state', this.state.results);
+		});
+	}
+	
 	render() {
 		return(
 			<div id='encyclopedia'>
-				<Search/>
-				<Results/>
+				<Search value={this.state.query} onChangeValue={this.handleChange} onSubmitAction={this.handleSubmit}/>
+				<Results results={this.state.results} query={this.state.query}/>
 			</div>
 		);
 	}
