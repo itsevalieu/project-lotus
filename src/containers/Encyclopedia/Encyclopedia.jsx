@@ -26,22 +26,19 @@ class Encyclopedia extends Component {
 		document.getElementById('searchbar').value = '';
 	}
 	componentDidMount() {
-		fetch('https://randomuser.me/api/?results=10')
-		.then(results => {
-			return results.json();
-		}).then(data => {
+		fetch('https://tea-db.herokuapp.com/api')
+		.then(res => res.json())
+		.then(data => {
 			console.log('data', data.results);
-			let results = data.results.map((user, index) => {
-				let userName = user.name.first.charAt(0).toUpperCase() + user.name.first.slice(1) + ' ' + user.name.last.charAt(0).toUpperCase() + user.name.last.slice(1);
-
+			let results = data.results.map((tea, index) => {
 				return(
 					<div id='card' className='card' key={index}>
 						<div className='card-image'>
-							<img src={user.picture.large} alt='Jasmine Pearl'/>
+							<img src={''} alt='Jasmine Pearl'/>
 						</div>
 						<div className='card-details'>
 							<ul>
-								<li><h2>Name: {userName}</h2></li>
+								<li><h2>Name: {tea.name}</h2></li>
 								<li><p>Type:  {}</p></li>
 								<li><p>Brew Time:  {}</p></li>
 								<li><p>Benefits:  {}</p></li>
