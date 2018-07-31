@@ -29,20 +29,20 @@ class Encyclopedia extends Component {
 		fetch('https://tea-db.herokuapp.com/api')
 		.then(res => res.json())
 		.then(data => {
-			console.log('data', data.results);
-			let results = data.results.map((tea, index) => {
+			console.log('data', data.data);
+			let results = data.data.map((tea, index) => {
 				return(
 					<div id='card' className='card' key={index}>
 						<div className='card-image'>
-							<img src={''} alt='Jasmine Pearl'/>
+							<img src={tea.imageUrl} alt={tea.name}/>
 						</div>
 						<div className='card-details'>
 							<ul>
 								<li><h2>Name: {tea.name}</h2></li>
-								<li><p>Type:  {}</p></li>
-								<li><p>Brew Time:  {}</p></li>
-								<li><p>Benefits:  {}</p></li>
-								<li><p>Description:  {}</p></li>			
+								<li><p>Type:  {tea.type}</p></li>
+								<li><p>Brew Time:  {tea.brew}</p></li>
+								<li><p>Benefits:  {tea.benefits}</p></li>
+								<li><p>Description:  {tea.description}</p></li>			
 							</ul>
 						</div>
 						<div className='card-buttons'>
@@ -54,7 +54,6 @@ class Encyclopedia extends Component {
 				);
 			});
 			this.setState({results: results});
-			console.log('state', this.state.results);
 		});
 	}
 	
