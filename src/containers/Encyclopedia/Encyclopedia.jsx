@@ -3,6 +3,7 @@ import './Encyclopedia.css';
 import './components/Card/Card.css';
 import Search from './components/Search/Search.jsx';
 import Results from './components/Results/Results.jsx';
+import axios from 'axios';
 
 class Encyclopedia extends Component {
 	constructor() {
@@ -13,7 +14,6 @@ class Encyclopedia extends Component {
 		}
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
-
 	}
 	handleChange(e) {
 		this.setState({
@@ -26,9 +26,11 @@ class Encyclopedia extends Component {
 		document.getElementById('searchbar').value = '';
 	}
 	componentDidMount() {
-		fetch('https://tea-db.herokuapp.com/api')
-		.then(res => res.json())
-		.then(data => {
+		// fetch('https://tea-db.herokuapp.com/api')
+		// .then(res => res.json())
+		// .then(data => {
+		axios(`https://tea-db.herokuapp.com/api`)
+		.then(({data}) => {
 			console.log('data', data.data);
 			let results = data.data.map((tea, index) => {
 				return(
