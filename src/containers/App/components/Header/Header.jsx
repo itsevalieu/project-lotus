@@ -22,7 +22,7 @@ class Header extends Component {
 				</div>
 				<div className='header-links'>
 					<a href='/learn'>HOW IT WORKS</a>
-					<a href='/encyclopedia' target='_blank'>ENCYCLOPEDIA</a>
+					<a href='/encyclopedia'>ENCYCLOPEDIA</a>
 					<a href='/login'>LOG IN</a>
 					<button><a href='/register'>CREATE ACCOUNT</a></button>
 				</div>
