@@ -14,6 +14,7 @@ class Encyclopedia extends Component {
 		}
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
+		this.filterData = this.filterData.bind(this);
 	}
 	handleChange(e) {
 		this.setState({
@@ -23,16 +24,11 @@ class Encyclopedia extends Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		console.log(this.state.query);
-		document.getElementById('searchbar').value = '';
-	}
-	componentDidMount() {
-		// fetch('https://tea-db.herokuapp.com/api')
-		// .then(res => res.json())
-		// .then(data => {
 		axios(`https://tea-db.herokuapp.com/api`)
 		.then(({data}) => {
-			console.log('data', data.data);
-			let results = data.data.map((tea, index) => {
+			let filteredData = this.filterData(data.data, this.state.query);
+			filteredData.sort();
+			let results = filteredData.map((tea, index) => {
 				return(
 					<div id='card' className='card' key={index}>
 						<div className='card-image'>
@@ -40,7 +36,7 @@ class Encyclopedia extends Component {
 						</div>
 						<div className='card-details'>
 							<ul>
-								<li><h2>Name: {tea.name}</h2></li>
+								<li><h3>{tea.name}</h3></li>
 								<li><p>Type:  {tea.type}</p></li>
 								<li><p>Brew Time:  {tea.brew}</p></li>
 								<li><p>Benefits:  {tea.benefits}</p></li>
@@ -57,6 +53,49 @@ class Encyclopedia extends Component {
 			});
 			this.setState({results: results});
 		});
+		document.getElementById('searchbar').value = '';
+
+	}
+	filterData(dataArray, query) {
+		return dataArray.filter((tea) => {
+			let type = tea.name;
+			console.log(
+				typeof type.toLowerCase().indexOf(query.toLowerCase()));
+			return type.toLowerCase().indexOf(query.toLowerCase()) > -1;
+		});
+	}
+	componentDidMount() {
+		// fetch('https://tea-db.herokuapp.com/api')
+		// .then(res => res.json())
+		// .then(data => {
+		// axios(`https://tea-db.herokuapp.com/api`)
+		// .then(({data}) => {
+		// 	let filteredData = this.filterData(data.data, this.state.query);
+		// 	let results = filteredData.map((tea, index) => {
+		// 		return(
+		// 			<div id='card' className='card' key={index}>
+		// 				<div className='card-image'>
+		// 					<img src={tea.imageUrl} alt={tea.name}/>
+		// 				</div>
+		// 				<div className='card-details'>
+		// 					<ul>
+		// 						<li><h2>Name: {tea.name}</h2></li>
+		// 						<li><p>Type:  {tea.type}</p></li>
+		// 						<li><p>Brew Time:  {tea.brew}</p></li>
+		// 						<li><p>Benefits:  {tea.benefits}</p></li>
+		// 						<li><p>Description:  {tea.description}</p></li>			
+		// 					</ul>
+		// 				</div>
+		// 				<div className='card-buttons'>
+		// 					<div className='button-comment'></div>
+		// 					<div className='button-add'></div>
+		// 				</div>
+		// 				<div className='button-bookmark'></div>
+		// 			</div>
+		// 		);
+		// 	});
+		// 	this.setState({results: results});
+		// });
 	}
 	
 	render() {

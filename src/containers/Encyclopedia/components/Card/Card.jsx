@@ -32,7 +32,7 @@ class Card extends Component {
 				</div>
 				<div className='card-details'>
 					<ul>
-						<li><h2>Name: {this.props.data.cell}</h2></li>
+						<li><h3>Name: {this.props.data.cell}</h3></li>
 						<li><p>Type:  {this.props.results}</p></li>
 						<li><p>Brew Time:  {this.props.results}</p></li>
 						<li><p>Benefits:  {this.props.results}</p></li>
