@@ -25,12 +25,13 @@ header {
   align-items: center;
   align-content: center; }
   .header-links a {
-    margin: 0px 12px;
+    margin: 0px 20px;
     white-space: nowrap; }
   .header-links a:hover {
     text-decoration: underline; }
   .header-links button {
-    font-size: 0.8em; }
+    width: 175px;
+    font-size: 0.95em;}
 
 .header-hamburger {
   display: none; }
