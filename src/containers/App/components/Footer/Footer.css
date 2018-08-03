@@ -1,8 +1,10 @@
 footer {
-  background: #ddd;
+  background: #fff;
   display: flex;
   flex-flow: row;
-  justify-content: space-around; }
+  justify-content: space-around; 
+  text-align: center;
+  padding: 60px 0px;}
   footer div {
     display: flex;
     flex-flow: row;
@@ -11,13 +13,18 @@ footer {
     width: 100%;
     padding: 20px 100px; }
   footer p {
-    font-weight: 600; }
+    font-weight: 600; 
+    padding: 0px;
+    text-align: center;}
   footer span {
     display: flex;
     flex-direction: row; }
 
+  footer a {
+    text-align: center;
+  }
 #connect li {
-  margin: 0px  15px 0px 0px; }
+  margin: 0px  15px; }
 
 /*==========Media Queries==========*/
 @media screen and (min-width: 945px) and (max-width: 1240px) {
@@ -29,6 +36,13 @@ footer {
     padding: 20px 50px; } }
 
 @media only screen and (max-width: 760px) {
+footer ul {
+    padding: 0px 0px;
+    margin: 0px auto; 
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center; }
   footer div {
     flex-flow: column;
     padding: 20px 0px; } }
