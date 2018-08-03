@@ -8,11 +8,24 @@
   grid-template-rows: 2fr auto;
   grid-template-areas: 'image detail' 'image button';
   margin: 10px 10px; 
-  position: relative;}
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.textflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card h3 {
+  padding: 10px 0;
+}
+.card p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 .card-image {
-  grid-area: image;
-background: black}
+  grid-area: image; }
 
 .card-image img {
   height: 100%;
@@ -20,17 +33,28 @@ background: black}
   object-fit: cover }
 
 .card-details {
-  grid-area: detail;}
+  grid-area: detail;
+text-overflow: ellipsis;
+border: 1px solid red;
+overflow: hidden;}
 
 .card-details ul {
   font-size: 0.8em;
-  padding: 0px 10px; }
+  padding: 0px 10px; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 0;
+  }
+.card-details li {
+  margin: 0 0;
+  padding: 0 0;
+}
 
 .card-buttons {
   grid-area: button;
   display: flex;
   justify-content: flex-end;
-  align-items: center;}
+  align-items: center;  }
 
 .button-bookmark {
   background: none;
@@ -49,10 +73,25 @@ background: black}
 .button-bookmark:hover {
   cursor: pointer;
 }
+
+/*.brew-color {
+  content: '';
+  background: none;
+  border-right: 50px solid transparent;
+  border-top: 50px solid green;
+  display: block;
+  top: 0px;
+  left: 250px;
+  height: 15px;
+  z-index: 5px;
+  position: absolute;
+}*/
+
+
 /*==========Media Queries==========*/
 @media screen and (min-width: 460px) and (max-width: 945px) {
   .card {
-    height: 250px;
+    height: 350px;
     grid-template-columns: minmax(75px, 1px) auto minmax(50px, 50px);
     grid-template-rows: 2fr;
     grid-template-areas: 'image detail button'; }
@@ -64,8 +103,8 @@ background: black}
 
 @media only screen and (max-width: 460px) {
   .card {
-    height: 450px;
-    grid-template-rows: 100px 2fr auto;
+    height: 600px;
+    grid-template-rows: 100px 3fr auto;
     grid-template-columns: auto;
     grid-template-areas: 'image' 'detail' 'button'; }
   .card-buttons button {

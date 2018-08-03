@@ -37,10 +37,9 @@ class Encyclopedia extends Component {
 						<div className='card-details'>
 							<ul>
 								<li><h3>{tea.name}</h3></li>
-								<li><p>Type:  {tea.type}</p></li>
-								<li><p>Brew Time:  {tea.brew}</p></li>
+								<li><p>{tea.type + ','} Brew  {tea.brew}</p></li>
 								<li><p>Benefits:  {tea.benefits}</p></li>
-								<li><p>Description:  {tea.description}</p></li>			
+								<li><p className='textflow'>{tea.description}</p></li>			
 							</ul>
 						</div>
 						<div className='card-buttons'>
@@ -48,6 +47,7 @@ class Encyclopedia extends Component {
 							<div className='button-add'></div>
 						</div>
 						<div className='button-bookmark'></div>
+						<div className='brew-color'></div>
 					</div>
 				);
 			});

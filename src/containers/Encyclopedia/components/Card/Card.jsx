@@ -33,10 +33,9 @@ class Card extends Component {
 				<div className='card-details'>
 					<ul>
 						<li><h3>Name: {this.props.data.cell}</h3></li>
-						<li><p>Type:  {this.props.results}</p></li>
-						<li><p>Brew Time:  {this.props.results}</p></li>
+						<li><p>Type:  {this.props.results}</p> <p>Brew Time:  {this.props.results}</p></li>
 						<li><p>Benefits:  {this.props.results}</p></li>
-						<li><p>Description:  {this.props.results}</p></li>			
+						<li><p>{this.props.results}</p></li>			
 					</ul>
 				</div>
 				<div className='card-buttons'>
