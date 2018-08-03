@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../../assets/css/Page.css';
+import '../Page.css';
 
 class Guidelines extends Component {
 	render() {
 		return(
 			<div id='page'>
-				<h1></h1>
+				<h1>Guidelines</h1>
 
 			</div>
 		);

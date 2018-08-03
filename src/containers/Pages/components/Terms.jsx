@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../../assets/css/Page.css';
+import '../Page.css';
 
 class Terms extends Component {
 	render() {
 		return(
 			<div id='page'>
-				<h1></h1>
+				<h1>Terms Page</h1>
 
 			</div>
 		);
