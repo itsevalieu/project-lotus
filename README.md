@@ -1,4 +1,4 @@
-# Project Lotus
+# Project Lotus aka Teafographic
 
 *Status: Core Features Complete, Additional Features In-Progress*
 
