@@ -13,11 +13,16 @@ Responsive landing page for a tea subscription website.
 ## Completed Features:
 1. Custom Web Design
 2. Mobile Responsive
+3. Encyclopedia
+	- Searchbar
+		- Simple Filter
+	- Result Cards
+	- Calls to custom Tea api on another server
 
 ## Features to Include:
 1. Encyclopedia
 	- Searchbar
-	- Result cards
+		- Tag filters on benefits, name, type
 	- Comments Modal
 	- Star Ranking
 2. Quizzes
