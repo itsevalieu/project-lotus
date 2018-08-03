@@ -16,6 +16,11 @@
 .hero-textbox {
   width: 30%; }
 
+.hero-textbox p {
+  padding: 0 0px; 
+  font-size: 1.1em;
+}
+
 /*==========Media Queries==========*/
 @media screen and (min-width: 945px) and (max-width: 1240px) {
   #hero {

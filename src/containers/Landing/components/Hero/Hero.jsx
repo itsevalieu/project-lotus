@@ -6,7 +6,7 @@ class Hero extends Component {
 		return(
 			<div id='hero'>
 				<div className='hero-textbox'>
-					<h2>Get Started With Tea</h2>
+					<h1>Get Started With Tea</h1>
 					<p>Customize your tea box subscription using our encyclopedia. Explore which teas suit your skin and health needs best.</p>
 					<button><a href='learn' target='_blank'>LEARN MORE</a></button>			
 				</div>
