@@ -23,7 +23,6 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
 .card-image {
   grid-area: image; }
 
@@ -34,21 +33,18 @@
 
 .card-details {
   grid-area: detail;
-text-overflow: ellipsis;
-border: 1px solid red;
-overflow: hidden;}
+  text-overflow: ellipsis;
+  overflow: hidden;}
 
 .card-details ul {
   font-size: 0.8em;
   padding: 0px 10px; 
   text-overflow: ellipsis;
   overflow: hidden;
-  margin: 0 0;
-  }
+  margin: 0 0;  }
 .card-details li {
   margin: 0 0;
-  padding: 0 0;
-}
+  padding: 0 0;}
 
 .card-buttons {
   grid-area: button;
