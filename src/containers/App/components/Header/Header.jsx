@@ -21,10 +21,10 @@ class Header extends Component {
 					<a href='/' id='site-name'>teafographic</a>
 				</div>
 				<div className='header-links'>
-					<a href='/learn'>HOW IT WORKS</a>
+					{/* <a href='/learn'>HOW IT WORKS</a> */}
 					<a href='/encyclopedia'>ENCYCLOPEDIA</a>
-					<a href='/login'>LOG IN</a>
-					<button><a href='/register'>CREATE ACCOUNT</a></button>
+					{/* <a href='/login'>LOG IN</a>
+					<button><a href='/register'>CREATE ACCOUNT</a></button> */}
 				</div>
 				<div className='header-hamburger'>
 					<a href='/' onClick={this.openSidebar}>
