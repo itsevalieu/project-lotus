@@ -50,12 +50,11 @@ class Encyclopedia extends Component {
 								<li><p className='textflow'>{tea.description}</p></li>			
 							</ul>
 						</div>
-						<div className='card-buttons'>
+						{/* <div className='card-buttons'>
 							<div className='button-comment'></div>
 							<div className='button-add'></div>
-						</div>
-						<div className='button-bookmark'></div>
-						<div className='brew-color'></div>
+						</div> */}
+						{/* <div className='button-bookmark'></div> */}
 					</div>
 				);
 			});
@@ -101,12 +100,11 @@ class Encyclopedia extends Component {
 								<li><p className='textflow'>{tea.description}</p></li>			
 							</ul>
 						</div>
-						<div className='card-buttons'>
+						{/* <div className='card-buttons'>
 							<div className='button-comment'></div>
 							<div className='button-add'></div>
-						</div>
-						<div className='button-bookmark'></div>
-						<div className='brew-color'></div>
+						</div> */}
+						{/* <div className='button-bookmark'></div> */}
 					</div>
 				);
 			});
