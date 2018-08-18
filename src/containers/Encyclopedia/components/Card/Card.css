@@ -90,7 +90,7 @@
     height: 350px;
     grid-template-columns: minmax(75px, 1px) auto minmax(50px, 50px);
     grid-template-rows: 2fr;
-    grid-template-areas: 'image detail button'; }
+    grid-template-areas: 'image detail detail'; }
   .card-buttons {
     flex-flow: column; }
   .card-buttons button {
@@ -99,7 +99,7 @@
 
 @media only screen and (max-width: 460px) {
   .card {
-    height: 600px;
+    height: 525px;
     grid-template-rows: 100px 3fr auto;
     grid-template-columns: auto;
     grid-template-areas: 'image' 'detail' 'button'; }
