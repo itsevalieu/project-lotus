@@ -27,7 +27,19 @@
 }
 .search span {
   width: 100%; }
-
+#quicksearch {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: flex-start
+}
+.quicksearch {
+  font-size: 16px;
+  margin: 5px;
+}
+.quicksearch:hover {
+  color: rgb(31, 115, 225);
+}
 /*==========Media Queries==========*/
 @media screen and (min-width: 945px) and (max-width: 1240px) {
   .search {
