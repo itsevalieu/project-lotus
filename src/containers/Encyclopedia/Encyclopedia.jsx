@@ -41,6 +41,7 @@ class Encyclopedia extends Component {
 					brew = ` Brew ${tea.brew} mins`;
 				}
 				let teaImage = require(`./tea/${tea.handle}.jpg`);
+				
 				return(
 					<div id='card' className='card' key={index} data-id={tea._id}>
 						<div className='card-image'>
@@ -92,7 +93,7 @@ class Encyclopedia extends Component {
 					brew = ` Brew ${tea.brew} mins`;
 				}
 				let teaImage = require(`./tea/${tea.handle}.jpg`);
-				
+
 				return(
 					<div id='card' className='card' key={index} data-id={tea._id}>
 						<div className='card-image'>

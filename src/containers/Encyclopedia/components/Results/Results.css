@@ -11,7 +11,9 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
-
+.waitingResults {
+  min-height: 100%;
+}
 /*==========Media Queries==========*/
 @media screen and (min-width: 945px) and (max-width: 1240px) {
   .results {
