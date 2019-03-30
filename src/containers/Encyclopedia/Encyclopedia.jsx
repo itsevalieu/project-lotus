@@ -10,16 +10,19 @@ class Encyclopedia extends Component {
 		super();
 		this.state = {
 			query: '',
-			results: []
+			results: [],
+			photos: []
 		}
 		this.handleClick = this.handleClick.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
 		this.filterData = this.filterData.bind(this);
 	}
+
 	handleClick(e) {
 		e.preventDefault();
 		let quickQuery = e.target.dataset.value;
+
 		axios(`https://tea-db.herokuapp.com/api/${quickQuery}`)
 		.then(({data}) => {
 			let typeData = data.data;
@@ -37,11 +40,11 @@ class Encyclopedia extends Component {
 				} else {
 					brew = ` Brew ${tea.brew} mins`;
 				}
-				
+				let teaImage = require(`./tea/${tea.handle}.jpg`);
 				return(
 					<div id='card' className='card' key={index} data-id={tea._id}>
 						<div className='card-image'>
-							<img src={tea.imageUrl} alt={tea.name}/>
+							<img src={teaImage} alt={tea.name}/>
 						</div>
 						<div className='card-details'>
 							<ul>
@@ -88,10 +91,12 @@ class Encyclopedia extends Component {
 				} else {
 					brew = ` Brew ${tea.brew} mins`;
 				}
+				let teaImage = require(`./tea/${tea.handle}.jpg`);
+				
 				return(
 					<div id='card' className='card' key={index} data-id={tea._id}>
 						<div className='card-image'>
-							<img src={tea.imageUrl} alt={tea.name}/>
+							<img src={teaImage} alt={tea.name}/>
 						</div>
 						<div className='card-details'>
 							<ul>
