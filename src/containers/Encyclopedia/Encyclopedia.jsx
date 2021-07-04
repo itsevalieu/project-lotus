@@ -39,7 +39,7 @@ class Encyclopedia extends Component {
         } else {
           brew = ` Brew ${tea.brew} mins`;
         }
-        let teaImage = `https://tea-api.s3.us-east-2.amazonaws.com/${tea.handle}.jpg`;
+        let teaImage = `${process.env.TEA_IMAGE}/${tea.handle}.jpg`;
 
         return (
           <div id="card" className="card" key={index} data-id={tea._id}>
@@ -100,7 +100,7 @@ class Encyclopedia extends Component {
         } else {
           brew = ` Brew ${tea.brew} mins`;
         }
-        let teaImage = `https://tea-api.s3.us-east-2.amazonaws.com/${tea.handle}.jpg`;
+        let teaImage = `${process.env.TEA_IMAGE}/${tea.handle}.jpg`;
 
         return (
           <div id="card" className="card" key={index} data-id={tea._id}>
