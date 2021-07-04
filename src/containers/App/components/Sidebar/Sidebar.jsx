@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import "./Sidebar.css";
+import React, { Component } from "react";
+import "./Sidebar.scss";
 
 class Sidebar extends Component {
-	render() {
-		return(
-			<div className="sidebar" id="sidebar">
-				<div className="sidebar-links">
-					{/* <a href="/learn">HOW IT WORKS</a> */}
-					<a href="/encyclopedia">ENCYCLOPEDIA</a>
-					{/* <a href="/login">LOG IN</a> */}
-				</div>
-			</div>
-		);
-	}
-};
+  render() {
+    return (
+      <div className="sidebar" id="sidebar">
+        <div className="sidebar-links">
+          {/* <a href="/learn">HOW IT WORKS</a> */}
+          <a href="/encyclopedia">ENCYCLOPEDIA</a>
+          {/* <a href="/login">LOG IN</a> */}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Sidebar;

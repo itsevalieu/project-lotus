@@ -1,66 +1,132 @@
 .card {
-	background: #fff;
-	width: 100%;
-	height: 300px;
-	border: 1px solid #ddd;
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: 2fr auto;
-	grid-template-areas: 
-		'image detail'
-		'image button';
-	margin: 10px 10px;
+  background: #fff;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 2fr auto;
+  grid-template-areas: "image detail" "image button";
+  margin: 10px 10px;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.textflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card h3 {
+  padding: 10px 0;
+}
+.card p {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .card-image {
-	grid-area: image;
-	background: #000;
-}
-.card-details {
-	grid-area: detail;
-}
-.card-details ul {
-	font-size: 0.8em;
-	padding: 0px 10px;
-}
-.card-buttons {
-	grid-area: button;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 5px 5px;
+  grid-area: image;
 }
 
+.card-image img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.card-details {
+  grid-area: detail;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-details ul {
+  font-size: 0.8em;
+  padding: 0px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 0;
+}
+.card-details li {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.card-buttons {
+  grid-area: button;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-bookmark {
+  background: none;
+  margin: 0px 10px;
+  content: "";
+  height: 55px;
+  border-left: 15px solid #cc1506;
+  border-right: 15px solid #cc1506;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  top: 0px;
+  right: 10px;
+}
+.button-bookmark:hover {
+  cursor: pointer;
+}
+
+/*.brew-color {
+	content: '';
+	background: none;
+	border-right: 50px solid transparent;
+	border-top: 50px solid green;
+	display: block;
+	top: 0px;
+	left: 250px;
+	height: 15px;
+	z-index: 5px;
+	position: absolute;
+  }*/
+
 /*==========Media Queries==========*/
-@media screen and (min-width: 1240px){}
-@media screen and (min-width: 945px) and (max-width: 1240px){
+@media screen and (min-width: 460px) and (max-width: 945px) {
+  .card {
+    height: 350px;
+    grid-template-columns: minmax(75px, 1px) auto minmax(50px, 50px);
+    grid-template-rows: 2fr;
+    grid-template-areas: "image detail detail";
+  }
+  .card-buttons {
+    flex-flow: column;
+  }
+  .card-buttons button {
+    width: 100%;
+    height: 100%;
+  }
+  .card-image img {
+    height: 175%;
+    width: 100%;
+    object-position: 50% -125px;
+    object-fit: cover;
+  }
 }
-@media screen and (min-width: 760px) and (max-width: 945px){
-	.card {
-		height: 250px;
-		grid-template-columns: minmax(75px, 125px) auto minmax(50px, 50px);
-		grid-template-rows: 2fr;
-		grid-template-areas: 
-			'image detail button';
-	}
-	.card-buttons {
-		flex-flow: column;
-	}
-	.card-buttons button {
-		width: 100%;
-		height: 100%;
-	}
-}
-@media only screen and (max-width: 760px) {
-	.card {
-		height: 500px;
-		grid-template-rows: 1fr 2fr auto;
-		grid-template-columns: minmax(100px);
-		grid-template-areas: 
-			'image image'
-			'detail detail'
-			'button button';
-	}
-	.card-buttons button {
-		width: auto;
-	}
+
+@media only screen and (max-width: 460px) {
+  .card {
+    height: 525px;
+    grid-template-rows: 100px 3fr auto;
+    grid-template-columns: auto;
+    grid-template-areas: "image" "detail" "button";
+  }
+  .card-buttons button {
+    width: auto;
+  }
+  .card-image img {
+    height: 100%;
+    width: 150%;
+    object-position: -75px 50%;
+    object-fit: cover;
+  }
 }
