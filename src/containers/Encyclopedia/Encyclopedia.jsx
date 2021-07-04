@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Encyclopedia.scss";
 import Search from "./components/Search/Search.jsx";
 import Results from "./components/Results/Results.jsx";
@@ -9,21 +9,20 @@ const Encyclopedia = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
 
-  useEffect(() => {
-    console.log("Fetch based on query", query);
-  }, [query]);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    let quickQuery = e.target.dataset.value;
-
-    axios(`https://tea-db.herokuapp.com/api/${quickQuery}`).then(({ data }) => {
+  const fetchTeaByType = (query) => {
+    axios(`https://tea-db.herokuapp.com/api/${query}`).then(({ data }) => {
       let typeData = data.data;
       let results = typeData.map((tea) => {
         return <Card tea={tea} />;
       });
       setResults(results);
     });
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    let quickQuery = e.target.dataset.value;
+    fetchTeaByType(quickQuery);
   };
 
   const handleChange = (e) => {
@@ -33,7 +32,8 @@ const Encyclopedia = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(query);
-    //Currently returns all the data, I want to the query do the
+
+    //TODO: Currently returns all the data, I want to the query do the
     //search on server and send back the filtered results
     axios(`https://tea-db.herokuapp.com/api`).then(({ data }) => {
       let filteredData = filterData(data.data, query);

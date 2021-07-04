@@ -2,7 +2,7 @@ import "./Card.scss";
 require("dotenv").config();
 
 const Card = ({ tea }) => {
-  console.log("card", tea);
+  // console.log("card", tea);
   let teaImage = `${process.env.REACT_APP_TEA_IMAGE}/${tea.handle}.jpg`;
   let benefits = tea.benefits.map((benefit, index) => {
     if (index === tea.benefits.length - 1) {
