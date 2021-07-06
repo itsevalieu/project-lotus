@@ -3,48 +3,54 @@
   margin: 0 100px;
   min-height: 250px;
   line-height: 25px;
+
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  input {
+    border: 1px solid #ddd;
+    width: 80%;
+    height: 50px;
+    text-overflow: ellipsis;
+    float: left;
+    padding: 0px 5px;
+    font-size: 1em;
+  }
+
+  button {
+    float: right;
+    width: 20%;
+    padding: 5px 5px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  span {
+    width: 100%;
+  }
+
+  #quicksearch {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: flex-start;
+  }
+
+  .quicksearch {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .quicksearch:hover {
+    color: rgb(31, 115, 225);
+  }
 }
 
-.search form {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.search input {
-  border: 1px solid #ddd;
-  width: 80%;
-  height: 50px;
-  text-overflow: ellipsis;
-  float: left;
-  padding: 0px 5px;
-  font-size: 1em;
-}
-
-.search button {
-  float: right;
-  width: 20%;
-  padding: 5px 5px;
-}
-.search p {
-  text-align: center;
-  font-size: 1.1em;
-}
-.search span {
-  width: 100%;
-}
-#quicksearch {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: flex-start;
-}
-.quicksearch {
-  font-size: 16px;
-  margin: 5px;
-}
-.quicksearch:hover {
-  color: rgb(31, 115, 225);
-}
 /*==========Media Queries==========*/
 @media screen and (min-width: 945px) and (max-width: 1240px) {
   .search {
@@ -55,23 +61,23 @@
 @media screen and (min-width: 760px) and (max-width: 945px) {
   .search {
     margin: 0px 50px;
-  }
-  .search input {
-    width: 80%;
-  }
-  .search button {
-    width: 20%;
+    input {
+      width: 80%;
+    }
+    button {
+      width: 20%;
+    }
   }
 }
 
 @media only screen and (max-width: 760px) {
   .search {
     margin: 0px 25px;
-  }
-  .search input {
-    width: 75%;
-  }
-  .search button {
-    width: 25%;
+    input {
+      width: 75%;
+    }
+    button {
+      width: 25%;
+    }
   }
 }

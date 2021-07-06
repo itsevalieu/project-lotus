@@ -22,6 +22,7 @@ const Encyclopedia = () => {
   const handleClick = (e) => {
     e.preventDefault();
     let quickQuery = e.target.dataset.value;
+    setQuery(quickQuery);
     fetchTeaByType(quickQuery);
   };
 

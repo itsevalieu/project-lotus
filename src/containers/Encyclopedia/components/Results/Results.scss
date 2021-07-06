@@ -6,13 +6,14 @@
   padding: 0 100px;
   min-height: 300px;
   background: #eee;
+
+  .results-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }
 
-.results-cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
 .waitingResults {
   min-height: 100%;
 }
