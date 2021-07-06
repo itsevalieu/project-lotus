@@ -18,7 +18,7 @@ const Card = ({ tea }) => {
     brew = ` Brew ${tea.brew} mins`;
   }
   return (
-    <div id="card" className="card" key={tea._id} data-id={tea._id}>
+    <div id="card" className="card" data-id={tea._id}>
       <div className="card-image">
         <img src={teaImage} alt={tea.name} />
       </div>

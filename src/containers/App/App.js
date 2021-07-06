@@ -1,21 +1,18 @@
-import React, { Component } from "react";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import "./App.scss";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Sidebar />
-        <main>{this.props.children}</main>
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = (props) => {
+  return (
+    <div>
+      <Header />
+      <Sidebar />
+      <main>{props.children}</main>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
 

@@ -13,7 +13,7 @@ const Encyclopedia = () => {
     axios(`https://tea-db.herokuapp.com/api/${query}`).then(({ data }) => {
       let typeData = data.data;
       let results = typeData.map((tea) => {
-        return <Card tea={tea} />;
+        return <Card tea={tea} key={tea._id} />;
       });
       setResults(results);
     });
@@ -41,7 +41,7 @@ const Encyclopedia = () => {
       filteredData.sort();
 
       let results = filteredData.map((tea) => {
-        return <Card tea={tea} />;
+        return <Card tea={tea} key={tea._id} />;
       });
       setResults(results);
     });
